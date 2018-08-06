@@ -1,0 +1,173 @@
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 96px;
+  z-index: 1000;
+}
+
+.fa-btn {
+  transition: all 0.2s;
+}
+
+.fa-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.container-main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  transition: height 1s;
+}
+
+.logo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-logo {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-logo .logo-img {
+  width: 600px;
+}
+
+@media all and (max-width: 1024px) {
+  .container-logo .logo-img {
+    width: 90%;
+  }
+}
+
+.container-logo .logo-name {
+  letter-spacing: 1em;
+  margin-left: 22px;
+  font-weight: 100;
+  opacity: 1;
+}
+
+.scroll-down-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 32px auto;
+  width: 100px;
+  font-size: 2em;
+  animation: shake_up_down 1s 5;
+  transform: translateY(0);
+}
+
+.container-about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.folder {
+  position: absolute;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.4);
+  width: 200%;
+  min-height: 100vh;
+  padding-bottom: 32px;
+  transition: width 800ms, transform 800ms, top 800ms;
+}
+
+.folder-overlay {
+  background: transparent;
+  z-index: 10000;
+}
+
+.folder-content {
+  opacity: 1;
+  margin-top: 0;
+  transition: opacity 500ms, margin 1000ms;
+}
+
+.folder-content-hidden {
+  opacity: 0;
+  margin-top: 200px;
+}
+
+.folder-title {
+  position: absolute;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  margin: 22px 0;
+  transition: all 1000ms;
+}
+
+.folder-title-left {
+  left: 128px;
+}
+
+.folder-title-left-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.folder-title-right {
+  right: 128px;
+}
+
+.folder-title-right-center {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.folder-header {
+  padding: 8px 0;
+  height: 64px;
+  margin: 16px 0;
+}
+
+.folder-header .folder-logo {
+  width: 4.6em;
+}
+
+.folder-header .fa-btn {
+  font-size: 1.4em;
+  padding-top: 5px;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  color: #FFF;
+  z-index: 10000;
+}
+
+#footer a {
+  color: #FFF;
+  padding: 0 4px;
+  font-size: 1.4em;
+  text-decoration: none;
+}

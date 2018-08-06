@@ -1,0 +1,34 @@
+#education .folder {
+  background: #F24915;
+  color: #FFF;
+  top: 16%;
+  left: 0;
+  transform: rotate(20deg);
+  transform-origin: top left;
+}
+
+#education .folder-hidden {
+  top: 200%;
+  z-index: -1;
+  transition: top 1000ms;
+}
+
+#education .straight {
+  top: 0;
+  width: 100%;
+  transform: rotate(0);
+  box-shadow: none;
+}
+
+#education .folder-overlay:hover {
+  cursor: pointer;
+  top: 12%;
+}
+
+#education .card {
+  width: 100%;
+}
+
+#education .card .education-date {
+  letter-spacing: 1.6vw;
+}

@@ -1,0 +1,8 @@
+@keyframes shake_up_down {
+  25% {
+    transform: translateY(-8px);
+  }
+  75% {
+    transform: translate3d(8px);
+  }
+}
